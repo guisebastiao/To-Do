@@ -1,0 +1,12 @@
+export const colorPrimaryNormal = "#788CDE";
+export const colorPrimaryActive = "#6070B2";
+export const whitePrimaryNormal = "#FFFFFF";
+export const themePrimaryNormal = "#1C1C1C";
+export const colorErrorNormal = "#E23F33";
+export const darkPrimaryNormal = "#2A2A2A";
+export const darkSecondaryNormal = "#222222";
+export const darkThirdNormal = "#292929";
+export const darkFouthNormal = "#323232";
+export const colorButtonNormal = "#4044ED";
+export const colorButtonHover = "#3033B2";
+export const grayNormal = "#828282";
