@@ -20,8 +20,3 @@ Este projeto é uma aplicação de lista de tarefas (To-Do) criada com ReactJS. 
 - **Styled-components** usado para estilização.
 - **ReactRouter** para a fazer o roteamento das páginas.
 - **JWT** para gerenciamento de autenticação.
-
-- **HTML** para a estrutura da página.
-- **CSS** para o design e layout.
-- **JavaScript** para a lógica do jogo e interatividade.
-- **Canvas API** para renderização gráfica.
