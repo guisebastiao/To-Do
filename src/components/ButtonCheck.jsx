@@ -3,7 +3,7 @@ import { CircleCheck, Circle } from "lucide-react";
 
 import { useTaskContext } from "@/context/TaskContext";
 
-export const ButtonCheck = ({ value = false, id = null }) => {
+export const ButtonCheck = ({ value, id }) => {
   const [check, setCheck] = useState(value);
   const { completeTask } = useTaskContext();
 
