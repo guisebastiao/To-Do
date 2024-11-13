@@ -1,11 +1,14 @@
-import React, { createContext, useContext, useState } from "react";
+import React, { createContext, useContext, useState, useEffect } from "react";
 
 const TaskContext = createContext();
 
 export const TaskProvider = ({ children }) => {
   const tasksStorage = localStorage.getItem("tasks");
   const [tasks, setTasks] = useState(tasksStorage ? JSON.parse(tasksStorage) : []);
-  localStorage.setItem("tasks", JSON.stringify(tasks));
+
+  useEffect(() => {
+    localStorage.setItem("tasks", JSON.stringify(tasks));
+  }, [tasks]);
 
   const createTask = (task) => {
     setTasks((state) => [...state, task]);

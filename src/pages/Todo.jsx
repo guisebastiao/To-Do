@@ -22,15 +22,23 @@ export const Todo = () => {
           </div>
         ) : (
           <>
-            {pendingTasks.length > 0 && <h1 className="w-full font-medium text-zinc-200">Tarefas Pendentes</h1>}
-            {pendingTasks.map(({ id, content, isCompleted }) => (
-              <Task key={id} id={id} content={content} isCompleted={isCompleted} />
-            ))}
+            {pendingTasks.length > 0 && (
+              <>
+                <h1 className="w-full font-medium text-zinc-200">Tarefas Pendentes</h1>
+                {pendingTasks.map(({ id, content, isCompleted }) => (
+                  <Task key={id} id={id} content={content} isCompleted={isCompleted} />
+                ))}
+              </>
+            )}
 
-            {completedTasks.length > 0 && <h1 className="w-full font-medium text-zinc-200">Tarefas Concluídas</h1>}
-            {completedTasks.map(({ id, content, isCompleted }) => (
-              <Task key={id} id={id} content={content} isCompleted={isCompleted} />
-            ))}
+            {completedTasks.length > 0 && (
+              <>
+                <h1 className="w-full font-medium text-zinc-200">Tarefas Concluídas</h1>
+                {completedTasks.map(({ id, content, isCompleted }) => (
+                  <Task key={id} id={id} content={content} isCompleted={isCompleted} />
+                ))}
+              </>
+            )}
           </>
         )}
       </section>
