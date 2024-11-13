@@ -3,9 +3,9 @@ import React, { createContext, useContext, useState } from "react";
 const TaskContext = createContext();
 
 export const TaskProvider = ({ children }) => {
-  const tasksStorage = localStorage.getItem("tasks");
+  // const tasksStorage = localStorage.getItem("tasks");
   const [tasks, setTasks] = useState(tasksStorage ? JSON.parse(tasksStorage) : []);
-  localStorage.setItem("tasks", JSON.stringify(tasks));
+  // localStorage.setItem("tasks", JSON.stringify(tasks));
 
   const createTask = (task) => {
     setTasks((state) => [...state, task]);
