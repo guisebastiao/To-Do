@@ -2,6 +2,10 @@
 
 Este repositório contém uma aplicação simples de lista de tarefas (To-Do) feita com React.
 
+## Link do Projeto
+
+- https://simpletodoo.vercel.app
+
 ## Funcionalidades
  - Adicionar novas tarefas.
  - Marcar tarefas como concluídas.
